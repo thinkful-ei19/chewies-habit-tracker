@@ -13,8 +13,11 @@ export const fetchDailyError=()=> ({
     type: FETCH_DAILY_ERROR
 });
 export const ADD_DAILY = 'ADD_DAILY'
-export const addDaily =()=> ({
-    type: ADD_DAILY
+export const addDaily =(meals, walkTimes, poops)=> ({
+    type: ADD_DAILY,
+    meals,
+    walkTimes,
+    poops
 })
 export const fetchDaily=()=> {
     return(dispatch)=> {

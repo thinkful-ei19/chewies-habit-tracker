@@ -1,12 +1,17 @@
 import React from 'react';
 import {reduxForm, Field} from 'redux-form';
 import ReactStars from 'react-stars';
+import Input from './input';
+import {addDaily} from '../actions/daily';
 
 
 
 export class Form extends React.Component {
     onSubmit(values) {
         console.log(values);
+        const value = this.input.value;
+        this.props.dispatch(addDaily(value));
+        
     }
     render() {
      
@@ -17,22 +22,22 @@ export class Form extends React.Component {
                 <form onSubmit={e=> this.onSubmit(e)}>
                     <label htmlFor='mealTimes'>Dog Bowl Icon</label>
                         <div className='meals'>
-                            <label htmlFor='Breakfast'>Breakfast</label>
-                            <Field name='meal-time' component='input' type='checkbox' value='Breakfast'/>
-                            <label htmlFor='Dinner'>Dinner</label>
-                            <Field name='meal-time' component='input' type='checkbox' value='Dinner'/>
-                            <Field name='meal-details' cid='message' component='textarea' placeholder='Comments/Concerns'/>
+                            <label htmlFor='breakfastMeal'>Breakfast</label>
+                            <Field name='breakfastMeal' component='input' type='checkbox'/>
+                            <label htmlFor='dinnerMeal'>Dinner</label>
+                            <Field name='dinnerMeal' component='input' type='checkbox' />
+                            <Field name='mealDetails' cid='message' component='textarea' placeholder='Comments/Concerns'/>
                         </div>
                     <label htmlFor='walks'>Dog Walking Icon</label>
-                        <div className='walks'>
-                            <label htmlFor='Morning'>Morning</label>
-                            <Field name='number-of-walks' component='input' type='checkbox' value='Morning'/>
-                            <label htmlFor='Morning'>Afternoon</label>
-                            <Field name='number-of-walks' component='input' type='checkbox' value='Afternoon'/>
-                            <label htmlFor='Morning'>Evening</label>
-                            <Field name='number-of-walks' component='input' type='checkbox' value='Evening'/>
-                            <label htmlFor='Morning'>Night</label>
-                            <Field name='number-of-walks' component='input' type='checkbox' value='Night'/>
+                        <div className='walkTimes'>
+                            <label htmlFor='morning'>Morning</label>
+                            <Field name='morning' component='input' type='checkbox'/>
+                            <label htmlFor='afternoon'>Afternoon</label>
+                            <Field name='afternoon' component='input' type='checkbox' />
+                            <label htmlFor='evening'>Evening</label>
+                            <Field name='evening' component='input' type='checkbox' />
+                            <label htmlFor='night'>Night</label>
+                            <Field name='night' component='input' type='checkbox' />
                         </div>
                     <label htmlFor='poops'>Poop Icon</label>
                         <div className='poops'>
@@ -46,7 +51,7 @@ export class Form extends React.Component {
                         </Field>
                         <Field name='poop-details' cid='message' component='textarea' placeholder='Important Comments about the day'/>
                     </div>
-                    <button type="submit" name="submit" id="guessButton" className="button">
+                    <button type="submit" disabled={this.props.pristine || this.props.submitting}>
                     Submit
                     </button>
                 </form>

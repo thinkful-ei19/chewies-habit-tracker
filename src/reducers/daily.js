@@ -1,9 +1,21 @@
 import {FETCH_DAILY_SUCCESS, FETCH_DAILY_REQUEST, FETCH_DAILY_ERROR, ADD_DAILY} from '../actions';
 
 const initialState = {
-    meals:{},
-    walkTimes: [],
-    poops:{},
+    meals:{ 
+        breakfastMeal: false,
+        dinnerMeal: false
+    },
+    walkTimes: {
+        morming: false,
+        afternoon: false,
+        evening: false,
+        night: false
+    },
+    poops:{
+        poopQuality: 0,
+        poopsTaken: 0,
+        poopDetails: ''
+    },
     loading: false,
     error: null
 };
