@@ -1,4 +1,4 @@
-import {FETCH_DAILY_SUCCESS, FETCH_DAILY_REQUEST, FETCH_DAILY_ERROR, ADD_DAILY} from '../actions';
+import {FETCH_DAILY_SUCCESS, FETCH_DAILY_REQUEST, FETCH_DAILY_ERROR, ADD_DAILY, POST_DAILY_SUCCESS, POST_DAILY_ERROR} from '../actions';
 
 const initialState = {
     meals:{ 
@@ -43,6 +43,16 @@ export default (state=initialState, action) => {
             meals: [...state.meals, meal],
             walkTimes: [...state.walkTimes, walkTime],
             poops: [...state.poops, poop]
+        })
+    }
+    if(action.type === POST_DAILY_SUCCESS){
+        return Object.assign({}, state, {
+
+        })
+    }
+    if(action.type === POST_DAILY_ERROR){
+        return Object.assign({}, state, {
+            error: action.error
         })
     }
     return state;
