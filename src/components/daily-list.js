@@ -42,10 +42,10 @@ class DailyList extends React.Component{
             {val.walkTimes.eveningWalk ? <i className="glyph-icon flaticon-walking-with-dog"></i>: ''}
             {val.walkTimes.nightWalk ? <i className="glyph-icon flaticon-walking-with-dog"></i>: ''}
             <br></br>
-            Poop Quality:  
+            Poop Quality: &emsp;  
             {val.poops ? val.poops.poopQuality : '  Not Recorded'}
             <br></br>
-            Poops Taken: 
+            Poops Taken: &emsp;
             {val.poops ? val.poops.poopsTaken : '  None'}
             {/* {val.poops.poopsTaken === 2 ? <div><i className="glyph-icon flaticon-poop"></i><i className="glyph-icon flaticon-poop"></i> </div>: ' '} */}
             <br></br>

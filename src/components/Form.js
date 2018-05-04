@@ -117,15 +117,15 @@ export class Form extends React.Component {
                             <div className='poops'>
                         
                                 <label>
-                                <Field name="poopQuality" component="input" type="radio" value="bad" />
-                                Bad
+                                <Field name="poopQuality" component="input" type="radio" value="Runny" />
+                                Runny
                                 </label>
                                 <label>
-                                <Field name="poopQuality" component="input" type="radio" value="ok"/>
+                                <Field name="poopQuality" component="input" type="radio" value="OK"/>
                                 OK
                                 </label>
                                 <label>
-                                <Field name="poopQuality" component="input" type="radio" value="solid" />
+                                <Field name="poopQuality" component="input" type="radio" value="Solid" />
                                 Solid
                                 </label>
                         
