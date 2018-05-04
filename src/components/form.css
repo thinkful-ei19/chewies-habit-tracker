@@ -1,0 +1,25 @@
+*{
+    font-size: 1em;
+}
+#meals, #walks, #poops {
+    width: 33.33%;
+    float: left;
+    padding: 10px;
+    
+    /* border: 1px solid #cecece;
+    border-radius: 5px;
+    background: rgb(255, 255, 255); */
+  }
+#comments {
+    width: 100%;
+    
+}
+.glyph-icon {
+    width: 100px;
+}
+#buttons{
+    float: left;
+}
+#icon{
+    height: 300px;
+}

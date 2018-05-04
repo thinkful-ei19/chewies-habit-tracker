@@ -4,6 +4,7 @@ import {API_BASE_URL} from '../config';
 
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
+import './form.css';
 
 
 
@@ -75,63 +76,77 @@ export class Form extends React.Component {
 
         return (
             <div>
-                <h2>Chewie's Daily Tracker</h2>
+                
                 <form onSubmit={this.props.handleSubmit(values =>
                     this.onSubmit(values)
                 )}>
                 {successMessage}
                 {errorMessage}
-                    <label htmlFor='mealTimes'>Dog Bowl Icon</label>
-                        <div className='meals'>
-                            <label htmlFor='breakfastMeal'>Breakfast</label>
-                            <Field name='breakfastMeal' component='input' type='checkbox'/>
-                            <label htmlFor='dinnerMeal'>Dinner</label>
-                            <Field name='dinnerMeal' component='input' type='checkbox' />
-                            <Field name='mealDetails' cid='message' component='textarea' placeholder='Food Comments/Concerns'/>
-                        </div>
-                    <label htmlFor='walks'>Dog Walking Icon</label>
-                        <div className='walkTimes'>
-                            <label htmlFor='morningWalk'>Morning</label>
-                            <Field name='morningWalk' component='input' type='checkbox'/>
-                            <label htmlFor='afternoonWalk'>Afternoon</label>
-                            <Field name='afternoonWalk' component='input' type='checkbox' />
-                            <label htmlFor='eveningWalk'>Evening</label>
-                            <Field name='eveningWalk' component='input' type='checkbox' />
-                            <label htmlFor='nightWalk'>Night</label>
-                            <Field name='nightWalk' component='input' type='checkbox' />
-                        </div>
-                    <label htmlFor='poops'>Poop Icon</label>
-                        
-                        <div className='poops'>
-                       
-                            <label>
-                            <Field name="poopQuality" component="input" type="radio" value="1" />
-                            Bad
-                            </label>
-                            <label>
-                            <Field name="poopQuality" component="input" type="radio" value="2" />
-                            OK
-                            </label>
-                            <label>
-                            <Field name="poopQuality" component="input" type="radio" value="3" />
-                            Good
-                            </label>
-                    
-                        <Field name='poopsTaken' component='select'>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </Field>
-                        <Field name='poopDetails' cid='message' component='textarea' placeholder='Poop Comments/Concerns'/>
+                    <div id="meals">
+                        <label htmlFor='mealTimes'>
+                        <i id="icon" className="glyph-icon flaticon-pet-food"></i> 
+                        </label>
+                            <div className='meals'>
+                                <Field name='breakfastMeal' component='input' type='checkbox'/>
+                                <label htmlFor='breakfastMeal'>Breakfast</label>
+                                <Field name='dinnerMeal' component='input' type='checkbox' />
+                                <label htmlFor='dinnerMeal'>Dinner</label>
+                            </div>
                     </div>
+                    <div id="walks">
+                        <label htmlFor='walks'>
+                        <i id="icon"className="glyph-icon flaticon-walking-with-dog"></i>
+                        
+                        </label>
+                            <div className='walkTimes'>
+                                <Field name='morningWalk' component='input' type='checkbox'/>
+                                <label htmlFor='morningWalk'>Morning</label>
+                                <Field name='afternoonWalk' component='input' type='checkbox' />
+                                <label htmlFor='afternoonWalk'>Afternoon</label>
+                                <Field name='eveningWalk' component='input' type='checkbox' />
+                                <label htmlFor='eveningWalk'>Evening</label>
+                                <Field name='nightWalk' component='input' type='checkbox' />
+                                <label htmlFor='nightWalk'>Night</label>
+                            </div>
+                    </div>
+                    <div id="poops">
+                        <label htmlFor='poops'>
+                        <i id="icon" className="glyph-icon flaticon-poop"></i> 
+                        </label>
+                            
+                            <div className='poops'>
+                        
+                                <label>
+                                <Field name="poopQuality" component="input" type="radio" value="1" />
+                                Bad
+                                </label>
+                                <label>
+                                <Field name="poopQuality" component="input" type="radio" value="2"/>
+                                OK
+                                </label>
+                                <label>
+                                <Field name="poopQuality" component="input" type="radio" value="3" />
+                                Good
+                                </label>
+                        
+                            <Field name='poopsTaken' component='select'>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </Field>
+                            <Field id="comments" name='poopDetails' cid='message' component='textarea' placeholder='Comments/Concerns'/>
+                        </div>
+                    </div>
+                    <div id="buttons">
                     <button type="submit" disabled={this.props.pristine || this.props.submitting}>
                     Submit
                     </button>
                     <button>
                     <Link to="/overview">Overview</Link>
                     </button>
+                    </div>
                 </form>
             </div>
         );

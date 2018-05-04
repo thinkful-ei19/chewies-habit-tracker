@@ -12,7 +12,7 @@ const initialState = {
         night: false
     },
     poops:{
-        poopQuality: 0,
+        poopQuality: '',
         poopsTaken: 0,
         poopDetails: ''
     },
