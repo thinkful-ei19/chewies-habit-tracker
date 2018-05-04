@@ -128,7 +128,7 @@ export class Form extends React.Component {
                                 <Field name="poopQuality" component="input" type="radio" value="Solid" />
                                 Solid
                                 </label>
-                        
+                                &emsp;
                             <Field name='poopsTaken' component='select'>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
