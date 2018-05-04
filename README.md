@@ -3,3 +3,6 @@ This app helps you keep track of your pets eating, walking and excrement habits 
 
 Check it out 
 https://chewies-daily-tracker.netlify.com/
+
+<h2>Logging In</h2>
+<img src="/ScreenShots/LoggingIn.png" alt="LoggingIn">
