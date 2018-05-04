@@ -6,3 +6,7 @@ https://chewies-daily-tracker.netlify.com/
 
 <h2>Logging In</h2>
 <img src="/ScreenShots/LoggingIn.png" alt="LoggingIn">
+<h2>Daily Habit Tracker Form </h2>
+<img src="/ScreenShots/DailyTrackerForm.png" alt="LoggingIn">
+<h2>Overview of logs submitted</h2>
+<img src="/ScreenShots/OverviewLogs.png" alt="LoggingIn">
