@@ -20,3 +20,4 @@ https://chewies-daily-tracker.netlify.com/
 <img alt="image" itemprop="image" src="https://img.stackshare.io/service/2538/kEpgHiC9.png">
 <img alt="image" itemprop="image" src="https://img.stackshare.io/service/1030/leaf-360x360.png">
 <img alt="image" itemprop="image" src="https://img.stackshare.io/service/1231/rMSbg7XZ.png">
+<img alt="image" itemprop="image" src="https://img.stackshare.io/service/1163/hashtag.png">
