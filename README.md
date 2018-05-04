@@ -21,3 +21,11 @@ https://chewies-daily-tracker.netlify.com/
 <img alt="image" itemprop="image" src="https://img.stackshare.io/service/1030/leaf-360x360.png" width="60" height="60">
 <img alt="image" itemprop="image" src="https://img.stackshare.io/service/1231/rMSbg7XZ.png" width="60" height="60">
 <img alt="image" itemprop="image" src="https://img.stackshare.io/service/1163/hashtag.png" width="60" height="60">
+
+<h2>Break Week Goals</h2>
+<ul>
+  <li>Put more time into CSS</li>
+  <li>Testing</li>
+  <li>Create Info Section</li>
+  
+</ul>
