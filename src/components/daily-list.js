@@ -20,7 +20,7 @@ class DailyList extends React.Component{
           .then(res=> this.setState({overview:res}))
       }
    list(){
-       console.log(this.state.overview);
+       
     //    var currentDate = new Date(this.state.overview.created)
     //     console.log(currentDate);
        //var returnObj = this.state.overview.map((entry)=> return[entry.breakfast, ] )

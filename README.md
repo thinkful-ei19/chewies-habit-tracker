@@ -13,7 +13,7 @@ https://chewies-daily-tracker.netlify.com/
 <img src="/ScreenShots/OverviewLogs.png" alt="LoggingIn">
 <br>
 <h2>Tech Stack</h2>
-<img src="https://img.stackshare.io/service/1020/OYIaJ1KK.png" alt="Oyiaj1kk">
+<img src="https://img.stackshare.io/service/1020/OYIaJ1KK.png" alt="Oyiaj1kk" width="200" height="40">
 <img itemprop="image" src="https://img.stackshare.io/stack/15297/reduxcom.png" alt="Reduxcom">
 <img alt="image" itemprop="image" src="https://img.stackshare.io/service/1011/GWnVTc9j.png">
 <img alt="image" itemprop="image" src="https://img.stackshare.io/service/1209/javascript.jpeg">
