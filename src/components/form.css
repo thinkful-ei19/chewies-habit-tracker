@@ -9,7 +9,14 @@
     /* border: 1px solid #cecece;
     border-radius: 5px;
     background: rgb(255, 255, 255); */
-  }
+}
+#comments {
+    border: 1px solid #cecece;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 1em;
+}
 #comments {
     width: 100%;
     
@@ -22,4 +29,6 @@
 }
 #icon{
     height: 300px;
+    
 }
+
