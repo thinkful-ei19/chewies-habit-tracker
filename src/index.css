@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+
 }
 h1 {
   font-family: 'Shadows Into Light Two', cursive;
@@ -9,7 +10,7 @@ h1 {
 }
 body {
   margin: 20px auto 0;
-  padding: 20;
+  padding: 20px;
   display: block;
   background: #BED0E9;
   font-family: 'Patrick Hand', cursive;
