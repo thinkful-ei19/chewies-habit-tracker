@@ -27,7 +27,12 @@ export const postDailySuccess=()=> ({
 export const POST_DAILY_ERROR = 'POST_DAILY_ERROR'
 export const postDailyError=()=> ({
     type: POST_DAILY_ERROR
-})
+});
+export const DELETE_DAILY = 'DELETE_DAILY';
+export const deleteDaily = (id) => ({
+    type: DELETE_DAILY,
+    id
+});
 //post action for saving info typed in the from post request to endpoint
 //once user logs in fetch username from db and validate
 //fetch request based on id for dailies
@@ -56,5 +61,21 @@ export const postDaily = (daily)=> {
             .then(res => res.json())
             .then(daily => dispatch(postDailySuccess(daily)))
             .catch(err => console.log(err));
+    }
+};
+export const deleteDaily = (daily)=> {
+    return (dispatch)=> {
+        fetch(`${API_BASE_URL}api/daily/${id}`, {
+            method: 'DELETE',
+            headers: {
+                'content-type': 'application/json'
+            }
+        })
+        .then(res => {
+            if(!res.ok) {
+                return Promise.reject(rest.statusText);
+            }
+            return dispatch(deleteDaily(id));
+        })
     }
 }

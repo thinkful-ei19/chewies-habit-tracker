@@ -52,7 +52,8 @@ class DailyList extends React.Component{
             Comments/Concerns:
             <br></br>
             {val.poops ? val.poops.poopDetails: ''}
-           
+           <button type="submit">Remove</button>
+           <button type="submit">Edit</button>
            </li>)
       ) 
       //return JSON.stringify(this.state.overview)
@@ -64,6 +65,7 @@ class DailyList extends React.Component{
             <button><Link to="/daily">Daily</Link></button>
            <ul>
                {this.list()}
+               
            </ul>
            
            </div>
