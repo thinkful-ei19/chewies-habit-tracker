@@ -11,9 +11,14 @@ export function LandingPage(props) {
     }
 
     return (
+        
         <div className="home">
-            
+            <div className="info">
+            Track your dogs eating, walking and defecation habits with easy to fill out form and daily overview. 
+            </div>
             <LoginForm />
+            Demo Username: demo
+            Demo Password: demopassword
             <Link to="/register">Register</Link>
         </div>
     );
