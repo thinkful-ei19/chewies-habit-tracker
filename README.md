@@ -8,9 +8,9 @@ https://chewies-daily-tracker.netlify.com/
 <h3>Logging In</h3>
 <img src="/ScreenShots/LoggingIn.png" alt="LoggingIn">
 <h3>Daily Habit Tracker Form </h3>
-<img src="/ScreenShots/DailyTrackerForm.png" alt="LoggingIn">
+<img src="/ScreenShots/DailyTrackerForm.png" alt="Daily form">
 <h3>Overview of logs submitted</h3>
-<img src="/ScreenShots/OverviewLogs.png" alt="LoggingIn">
+<img src="/ScreenShots/DailyList.png" alt="Daily List">
 <br>
 <h2>Tech Stack</h2>
 <img src="https://img.stackshare.io/service/1020/OYIaJ1KK.png" alt="Oyiaj1kk" width="60" height="60">
@@ -22,10 +22,5 @@ https://chewies-daily-tracker.netlify.com/
 <img alt="image" itemprop="image" src="https://img.stackshare.io/service/1231/rMSbg7XZ.png" width="60" height="60">
 <img alt="image" itemprop="image" src="https://img.stackshare.io/service/1163/hashtag.png" width="60" height="60">
 
-<h2>Break Week Goals</h2>
-<ul>
-  <li>Put more time into CSS</li>
-  <li>Testing</li>
-  <li>Create Info Section</li>
-  
-</ul>
+<h2>API Documentation</h2>
+https://documenter.getpostman.com/collection/view/3823086-0ffeb258-2b45-479d-8904-77be12bfbb0b
