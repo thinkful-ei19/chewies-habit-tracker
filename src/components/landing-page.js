@@ -14,7 +14,9 @@ export function LandingPage(props) {
         
         <div className="home">
             <div className="info">
-            Track your dogs eating, walking and defecation habits with an easy to fill out form and daily overview. 
+            Track your dogs eating, walking and defecation habits with an easy to fill out form and daily overview.
+            <br />
+            Register today!
             </div>
             <LoginForm />
             <Link to="/register">Register</Link>
